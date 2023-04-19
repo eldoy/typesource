@@ -1,0 +1,15 @@
+{
+  "name": "typesource",
+  "version": "0.1.0",
+  "description": "Your single source of application types",
+  "bin": {
+    "waveorb": "bin/typesource.js"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldoy/typesource"
+  },
+  "author": "Vidar Eldøy <vidar@eldoy.com>",
+  "license": "ISC"
+}
