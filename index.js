@@ -42,5 +42,5 @@ module.exports = function typesource(opt = {}) {
     write(`${output}/${type}.yml`, result)
   }
 
-  console.log(`\nTypes written to ${output}.\n`)
+  console.log(`\nTypes written to ${output} directory.\n`)
 }
