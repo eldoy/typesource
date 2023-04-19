@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "description": "Your single source of application types",
   "bin": {
-    "waveorb": "bin/typesource.js"
+    "typesource": "bin/typesource.js"
   },
   "main": "index.js",
   "scripts": {
