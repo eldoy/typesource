@@ -6,6 +6,9 @@
     "waveorb": "bin/typesource.js"
   },
   "main": "index.js",
+  "scripts": {
+    "test": "nodemon bin/typesource.js generate test/schemas test/types"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eldoy/typesource"

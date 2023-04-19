@@ -15,7 +15,6 @@ module.exports = function typesource(opt = {}) {
   const types = {}
   for (const schema of schemas) {
     const data = read(schema)
-    console.log(data)
     for (const type in data) {
       types[type] = data[type]
     }
@@ -38,6 +37,10 @@ module.exports = function typesource(opt = {}) {
 
   // Write
   for (const type in types) {
-    write(`${output}/${type}.yml`, { [type]: types[type] })
+    const result = { [type]: types[type] }
+    console.log(`\n${JSON.stringify(result, null, 2)}`)
+    write(`${output}/${type}.yml`, result)
   }
+
+  console.log(`\nTypes written to ${output}.\n`)
 }
