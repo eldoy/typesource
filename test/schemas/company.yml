@@ -1,0 +1,8 @@
+company:
+  fields:
+    name: string
+
+company_public:
+  base: company
+  fields:
+    phone: string

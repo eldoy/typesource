@@ -5,9 +5,9 @@ Your single source of application types.
 Features:
 
 * Concise and human readable
-* Language agnostic
 * Portable YAML format
-* Can be used to generate JSDoc
+* Language agnostic
+* Can be used to generate JSDoc or other type declarations
 
 ### Install
 
@@ -59,20 +59,26 @@ company_public:
     phone: string
 ```
 
+### Field description
+
+To add descriptions to your types, use the object notation:
+
+```yml
+company:
+  fields:
+    name:
+      type: string
+      desc: This is the description
+```
+
 ### Generate types
 
 When you're done adding your schemas run:
 
 ```
-typesource generate
+typesource generate schemas types
 ```
 
-By default it will generate `yml` files for each of your types in the `./types` directory.
-
-You can specify the directory like this:
-
-```
-typesource generate some/dir/types
-```
+The first parameter, `schemas`, is the directory where your schemas are stored. The second parameter, `types` is the directory where you want the types to be written.
 
 ISC Licensed. Enjoy!

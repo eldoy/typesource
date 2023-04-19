@@ -1,0 +1,7 @@
+project_internal:
+  desc: This is the internal type description
+  fields:
+    title: string
+    user:
+      type: string
+      desc: Main Man

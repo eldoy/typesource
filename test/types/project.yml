@@ -1,0 +1,4 @@
+project:
+  desc: This is the type description
+  fields:
+    title: string

@@ -1,15 +1,13 @@
 #!/usr/bin/env node
-const { exists, mkdir, read, write } = require('extras')
-const path = require('path')
+const typesource = require('../index.js')
 
 const command = process.argv[2]
 if (!command) {
   console.log(`\nUsage:`)
-  console.log(`\n  typesource generate <dir>`)
+  console.log(`\n  typesource generate <inputdir> <outputdir>`)
 }
 
-const dir = process.argv[3] || 'types'
+const input = process.argv[3] || 'schemas'
+const output = process.argv[4] || 'types'
 
-if (!exists(dir)) {
-  mkdir(dir)
-}
+typesource({ input, output })
